@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[CẦN BỔ SUNG] — CLB đọc sách cộng đồng</title>
+<meta name="description" content="Trang giới thiệu CLB đọc sách cộng đồng: lịch sinh hoạt tối thứ 5 hằng tuần, sách tiêu biểu, đăng ký thành viên, quy tắc sinh hoạt và liên hệ ban chủ nhiệm.">
+<style>
+  :root {
+    --nen-giay: #F7F0E1;
+    --nen-the: #FFFDF6;
+    --chu-chinh: #3E2A1E;
+    --chu-phu: #7A5C44;
+    --diem-nhan: #8B5E34;
+    --vien: #D8C7A8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--nen-giay);
+    color: var(--chu-chinh);
+    font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; line-height: 1.3; }
+  .khung { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header { text-align: center; padding: 48px 0 24px; border-bottom: 3px double var(--vien); }
+  header h1 { font-size: 2.2em; margin: 0 0 8px; }
+  header p { color: var(--chu-phu); margin: 8px 0; }
+  .nut {
+    display: inline-block; margin-top: 16px; min-height: 48px; line-height: 48px;
+    padding: 0 28px; background: var(--diem-nhan); color: #FFFDF6; text-decoration: none; font-size: 18px; border-radius: 6px; border: none; cursor: pointer;
+  }
+  .nut:hover { background: #6f4a28; }
+  nav { text-align: center; padding: 16px 0; border-bottom: 1px solid var(--vien); }
+  nav a { color: var(--diem-nhan); text-decoration: none; margin: 0 10px; font-size: 18px; }
+  nav a:hover { text-decoration: underline; }
+  section { padding: 40px 0; border-bottom: 1px solid var(--vien); }
+  section h2 { font-size: 1.7em; color: var(--diem-nhan); margin: 0 0 16px; }
+  .the {
+    background: var(--nen-the); border: 1px solid var(--vien);
+    border-radius: 8px; padding: 20px 24px; margin: 16px 0;
+  }
+  .nhan-manh { font-weight: bold; color: var(--diem-nhan); }
+  .chu-phu { color: var(--chu-phu); }
+  .can-bo-sung { font-style: italic; color: var(--chu-phu); }
+  .bang-cu { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; background: var(--nen-the); }
+  th, td { border: 1px solid var(--vien); padding: 12px 14px; text-align: left; vertical-align: top; }
+  th { background: #efe4cd; color: var(--chu-chinh); }
+  form label { display: block; margin: 16px 0 4px; font-weight: bold; }
+  form input, form textarea {
+    width: 100%; padding: 12px 14px; font-size: 18px; border: 1px solid var(--vien);
+    border-radius: 6px; background: #fff; color: var(--chu-chinh);
+  }
+  form .loi { color: #9c2b1e; font-size: 17px; margin-top: 4px; }
+  #thong-bao {
+    display: none; margin-top: 20px; padding: 16px 20px;
+    background: #eef3e6; border: 1px solid #9db88a; border-radius: 8px;
+  }
+  ol.quy-tac { padding-left: 24px; }
+  ol.quy-tac li { margin-bottom: 10px; }
+  footer { text-align: center; padding: 32px 0 48px; color: var(--chu-phu); }
+  @media (max-width: 600px) {
+    body { font-size: 17px; }
+    header h1 { font-size: 1.7em; }
+    section h2 { font-size: 1.4em; }
+    nav a { display: inline-block; margin: 4px 8px; }
+    table { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<div class="khung">
+
+<header>
+  <h1>[CẦN BỔ SUNG] — Tên CLB chính thức</h1>
+  <p>Nội dung đang được ban chủ nhiệm cập nhật.</p>
+  <p>Cùng đọc, cùng chia sẻ — sinh hoạt tối thứ 5 hằng tuần.</p>
+  <a class="nut" href="#dang-ky">Đăng ký thành viên</a>
+</header>
+
+<nav aria-label="Điều hướng chính">
+  <a href="#gioi-thieu">Giới thiệu</a>
+  <a href="#lich-sinh-hoat">Lịch sinh hoạt</a>
+  <a href="#sach-tieu-bieu">Sách tiêu biểu</a>
+  <a href="#dang-ky">Đăng ký</a>
+  <a href="#quy-tac">Quy tắc</a>
+  <a href="#lien-he">Liên hệ</a>
+</nav>
+
+<main>
+  <section id="gioi-thieu">
+    <h2>Giới thiệu CLB</h2>
+    <p class="can-bo-sung">[CẦN BỔ SUNG] — Giới thiệu CLB (mục đích, đối tượng tham gia, hình thức sinh hoạt chung).</p>
+    <ul>
+      <li>Đọc cùng nhau — mỗi buổi cùng bàn về một cuốn sách.</li>
+      <li>Chia sẻ — ai cũng có thể kể cảm nhận của mình.</li>
+      <li>Cộng đồng mở — chào đón mọi lứa tuổi trong cộng đồng.</li>
+    </ul>
+  </section>
+
+  <section id="lich-sinh-hoat">
+    <h2>Lịch sinh hoạt tháng</h2>
+    <p class="nhan-manh">Sinh hoạt tối thứ 5 hằng tuần.</p>
+    <div class="bang-cu">
+    <table>
+      <caption class="chu-phu">Lịch tháng 10/2026 — sách và người dẫn đang chờ ban chủ nhiệm cập nhật.</caption>
+      <thead>
+        <tr><th>Ngày (thứ 5)</th><th>Sách đang đọc</th><th>Người dẫn buổi sinh hoạt</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>01/10/2026</td><td class="can-bo-sung">[CẦN BỔ SUNG] — Sách đang đọc</td><td class="can-bo-sung">[CẦN BỔ SUNG] — Người dẫn buổi sinh hoạt</td></tr>
+        <tr><td>08/10/2026</td><td class="can-bo-sung">[CẦN BỔ SUNG] — Sách đang đọc</td><td class="can-bo-sung">[CẦN BỔ SUNG] — Người dẫn buổi sinh hoạt</td></tr>
+        <tr><td>15/10/2026</td><td class="can-bo-sung">[CẦN BỔ SUNG] — Sách đang đọc</td><td class="can-bo-sung">[CẦN BỔ SUNG] — Người dẫn buổi sinh hoạt</td></tr>
+        <tr><td>22/10/2026</td><td class="can-bo-sung">[CẦN BỔ SUNG] — Sách đang đọc</td><td class="can-bo-sung">[CẦN BỔ SUNG] — Người dẫn buổi sinh hoạt</td></tr>
+        <tr><td>29/10/2026</td><td class="can-bo-sung">[CẦN BỔ SUNG] — Sách đang đọc</td><td class="can-bo-sung">[CẦN BỔ SUNG] — Người dẫn buổi sinh hoạt</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="chu-phu">Ghi chú: lịch có thể đổi theo thông báo của ban chủ nhiệm. Muốn xác nhận buổi gần nhất, xem mục <a href="#lien-he">Liên hệ</a>.</p>
+  </section>
+
+  <section id="sach-tieu-bieu">
+    <h2>Sách tiêu biểu</h2>
+    <div class="the">
+      <p class="can-bo-sung">[CẦN BỔ SUNG] — Danh sách sách thật + tóm tắt ngắn từng cuốn.</p>
+      <p>Nội dung đang được ban chủ nhiệm cập nhật. Khi có sách thật, mỗi cuốn sẽ hiện ở đây kèm tóm tắt ngắn 2–3 câu.</p>
+    </div>
+  </section>
+
+  <section id="dang-ky">
+    <h2>Đăng ký thành viên mới</h2>
+    <form id="form-dang-ky" novalidate>
+      <label for="ho-ten">Họ tên *</label>
+      <input type="text" id="ho-ten" name="ho-ten" autocomplete="name" required>
+      <p class="loi" id="loi-ho-ten"></p>
+
+      <label for="lien-lac">Số điện thoại hoặc email *</label>
+      <input type="text" id="lien-lac" name="lien-lac" autocomplete="email" required>
+      <p class="loi" id="loi-lien-lac"></p>
+
+      <label for="the-loai">Bạn muốn đọc thể loại nào? (không bắt buộc)</label>
+      <input type="text" id="the-loai" name="the-loai">
+
+      <button class="nut" type="submit">Gửi đăng ký</button>
+    </form>
+    <div id="thong-bao" role="status" aria-live="polite">
+      Đã ghi nhận thông tin. Ban chủ nhiệm sẽ liên hệ lại.
+    </div>
+    <p class="chu-phu">Lưu ý: form này <strong>chưa nối backend</strong> — thông tin chỉ hiển thị xác nhận trên trang, <strong>không được gửi đi đâu và không được lưu ở đâu</strong> cho đến khi có backend thật.</p>
+  </section>
+
+  <section id="quy-tac">
+    <h2>Quy tắc sinh hoạt</h2>
+    <ol class="quy-tac">
+      <li>Đúng giờ — sinh hoạt tối thứ 5 hằng tuần.</li>
+      <li>Tôn trọng người đang phát biểu, nghe hết ý rồi mới góp ý.</li>
+      <li>Giữ sách chung cẩn thận, trả đúng hẹn.</li>
+      <li>Đăng ký trước khi dẫn buổi sinh hoạt.</li>
+      <li>Chia sẻ thẳng thắn, nhẹ nhàng — không phán xét cảm nhận của người khác.</li>
+      <li>Giữ không gian sinh hoạt chung gọn gàng, yên tĩnh.</li>
+    </ol>
+    <p class="can-bo-sung">[CẦN BỔ SUNG] — Quy tắc sinh hoạt chính thức do ban chủ nhiệm xác nhận.</p>
+  </section>
+
+  <section id="lien-he">
+    <h2>Địa điểm và liên hệ ban chủ nhiệm</h2>
+    <p><span class="nhan-manh">Địa điểm sinh hoạt:</span> <span class="can-bo-sung">[CẦN BỔ SUNG] — Địa điểm sinh hoạt cụ thể (tên địa điểm, địa chỉ, hướng dẫn đến nơi).</span></p>
+    <p><span class="nhan-manh">Liên hệ ban chủ nhiệm:</span> <span class="can-bo-sung">[CẦN BỔ SUNG] — Liên hệ ban chủ nhiệm (người liên hệ, số điện thoại/email, giờ liên hệ).</span></p>
+    <p><span class="nhan-manh">Thời gian cố định:</span> sinh hoạt tối thứ 5 hằng tuần.</p>
+  </section>
+</main>
+
+<footer>
+  <p>[CẦN BỔ SUNG] — Tên CLB chính thức</p>
+  <p class="can-bo-sung">[CẦN BỔ SUNG] — Địa điểm sinh hoạt · [CẦN BỔ SUNG] — Liên hệ ban chủ nhiệm</p>
+  <p>Sinh hoạt tối thứ 5 hằng tuần.</p>
+</footer>
+
+</div>
+<script>
+  document.getElementById('form-dang-ky').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var ten = document.getElementById('ho-ten');
+    var lienLac = document.getElementById('lien-lac');
+    var loiTen = document.getElementById('loi-ho-ten');
+    var loiLienLac = document.getElementById('loi-lien-lac');
+    var tb = document.getElementById('thong-bao');
+    var hopLe = true;
+    loiTen.textContent = '';
+    loiLienLac.textContent = '';
+    tb.style.display = 'none';
+    if (!ten.value.trim()) { loiTen.textContent = 'Vui lòng nhập họ tên.'; hopLe = false; }
+    var ll = lienLac.value.trim();
+    var laEmail = ll.indexOf('@') > 0 && ll.indexOf('.') > ll.indexOf('@');
+    var laDienThoai = ll.replace(/[\s+\-()]/g, '').length >= 9 && /^[0-9+\s\-()]+$/.test(ll);
+    if (!ll) { loiLienLac.textContent = 'Vui lòng nhập số điện thoại hoặc email.'; hopLe = false; }
+    else if (!laEmail && !laDienThoai) { loiLienLac.textContent = 'Số điện thoại hoặc email chưa đúng định dạng. Vui lòng kiểm tra lại.'; hopLe = false; }
+    if (!hopLe) return;
+    // Chưa nối backend: chỉ hiển thị xác nhận, không gửi dữ liệu đi đâu.
+    tb.style.display = 'block';
+    tb.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  });
+</script>
+</body>
+</html>
