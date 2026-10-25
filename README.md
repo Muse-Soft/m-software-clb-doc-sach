@@ -1,11 +1,22 @@
-# m-software-clb-doc-sach
+# Clb Doc Sach
 
-Trang tĩnh CLB đọc sách cộng đồng (TEC-114, theo DESIGN.md — TEC-113).
+Trang giới thiệu (landing page) **tĩnh** — trang giới thiệu CLB đọc sách cộng đồng: lịch sinh hoạt tối thứ 5 hằng tuần, sách tiêu biểu, đăng ký thành viên, quy tắc sinh hoạt và liên hệ ban chủ nhiệm. Trang được dựng bằng HTML, CSS và JavaScript thuần, không cần bước biên dịch.
 
-Mở `index.html` bằng trình duyệt để xem trang: giới thiệu CLB, lịch sinh hoạt tháng (tối thứ 5 hằng tuần), sách tiêu biểu, form đăng ký thành viên (chỉ frontend, chưa nối backend), quy tắc sinh hoạt, địa điểm và liên hệ ban chủ nhiệm.
+> Mọi tên, số điện thoại, địa chỉ và số liệu trên trang đều là **dữ liệu mẫu**. Giá hiển thị là **giá mẫu**. Biểu mẫu (nếu có) chỉ là giao diện minh họa: không gửi dữ liệu đi đâu và không có backend.
 
-Dữ liệu thật chưa có — mọi vị trí chưa có dữ liệu đều giữ placeholder `[CẦN BỔ SUNG]`, không tự bịa tên CLB, địa điểm, sách hay liên hệ.
+**Giấy phép:** [MIT](LICENSE) © M-Software
 
-## Demo
+## Cách xem
 
-Trang đã triển khai tại: https://m-software-clb-doc-sach.genalpha.dev
+Mở `index.html` bằng trình duyệt (nhấp đúp, không cần máy chủ), hoặc mở liên kết demo ở trên. Giữ nguyên các tệp cùng thư mục vì liên kết là tương đối.
+
+| Tệp | Nội dung |
+|---|---|
+| `README.md` | Tài liệu giới thiệu này |
+| `index.html` | Trang chính |
+
+## English
+
+A **static** landing page for Clb Doc Sach, built with plain HTML, CSS and JavaScript. All names, contact details and figures shown are sample data, displayed prices are sample prices, and any form is interface-only — nothing is submitted and there is no backend. Open `index.html` in a browser. Licensed under MIT.
+
+Contact: contact@genalpha.dev
